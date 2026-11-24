@@ -1,40 +1,43 @@
-# Портфолио проектов по Data Science
+# Data Science Portfolio
 
-Портфолио проектов, выполненных в рамках расширенной программы обучения «Специалист по Data Science» от Яндекс Практикума.
+Практические кейсы по анализу данных и машинному обучению: от EDA и статистики до NLP, компьютерного зрения и временных рядов.
 
-Каждая работа представляет собой решение комплексной бизнес-задачи с использованием современных методов анализа данных и машинного обучения.
+## ИЗБРАННЫЕ ПРОЕКТЫ
 
-**Ключевые инструменты:** Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, SciPy, Phik, SHAP, Apache Spark, SQL, BigQuery, PostgreSQL.
+*   **[Telecom Customer Churn Prediction](./14.%20Graduation%20project)** — Прогнозирование оттока клиентов телеком-компании. Построена модель CatBoost с ROC-AUC 0.9300, выявлено критическое окно оттока.
+*   **[Vehicle Market Value Prediction](./08.%20Numerical%20methods)** — Оценка рыночной стоимости автомобилей. Модель LightGBM показала RMSE 1 600 € (при бизнес-пороге 2 500 €).
+*   **[RiskDrive: Driver Accident Risk Assessment](./10.%20Classification%20and%20model%20quality)** — Оценка вероятности быть виновником ДТП. Борьба с дисбалансом классов, ROC-AUC 0.9262.
+*   **[Taxi Order Forecasting](./11.%20Time%20series)** — Прогнозирование заказов такси на следующий час с использованием временных рядов и лаговых признаков.
 
----
+## ВСЕ ПРОЕКТЫ
 
-## ПРОЕКТЫ
+| № | Домен / Задача | Проект | Стек |
+| :--- | :--- | :--- | :--- |
+| 01 | EDA и препроцессинг | [Исследование рынка российского кинопроката](./01.%20Preprocessing%20and%20EDA) | Python, Pandas, Matplotlib |
+| 02 | Статистический анализ | [Анализ сервиса аренды самокатов](./02.%20Statistical%20data%20analysis) | Python, SciPy, проверка гипотез |
+| 03 | Линейные модели | [Линейные модели в машинном обучении](./03.%20Linear%20models%20in%20ML) | Scikit-learn, Pandas |
+| 04 | Обучение с учителем | [Качество моделей машинного обучения](./04.%20Supervised%20learning.%20Model%20quality) | Scikit-learn, GridSearchCV |
+| 05 | HR-аналитика | [Сборный проект - 2. HR-аналитика](./05.%20HR-analytics) | Pandas, Scikit-learn, EDA |
+| 06 | ML в бизнесе | [Машинное обучение в бизнесе](./06.%20ML%20in%20business) | Scikit-learn, Бизнес-метрики |
+| 07 | Big Data | [Системы больших данных](./07.%20Big%20Data%20Systems) | PySpark, SQL |
+| 08 | Регрессия | [Vehicle Market Value Prediction](./08.%20Numerical%20methods) | LightGBM, Feature Engineering |
+| 09 | Классификация | [Star Temperature Prediction](./09.%20ML%20models%20and%20algorithms) | Scikit-learn, Регрессия |
+| 10 | Дисбаланс классов | [RiskDrive: Driver Accident Risk Assessment](./10.%20Classification%20and%20model%20quality) | CatBoost, Imblearn, ROC-AUC |
+| 11 | Временные ряды | [Taxi Order Forecasting](./11.%20Time%20series) | Statsmodels, LightGBM, Лаги |
+| 12 | NLP | [E-commerce Comment Classification](./12.%20NLP%20for%20text) | NLP, TF-IDF, Классификация |
+| 13 | Computer Vision | [Image Search for Photo Hosting](./13.%20Course%20project%20-%205) | PyTorch, Transfer Learning |
+| 14 | Выпускной проект | [Telecom Customer Churn Prediction](./14.%20Graduation%20project) | CatBoost, SHAP, EDA |
 
-| Курс | Название проекта | Краткое описание | Задачи | Стек |
-| :--- | :--- | :--- | :--- | :--- |
-| **04.** Сборный проект - 1 | **[Исследование рынка российского кинопроката](04.%20Course%20project%20-%201/Russian_film_market%20.ipynb)** | Анализ данных о фильмах и сборах для Министерства культуры РФ. Выявление трендов, оценка эффективности господдержки. | <ul><li>Обработка пропусков и аномалий</li><li>Очистка категориальных данных</li><li>Анализ динамики проката</li><li>Исследование окупаемости фильмов</li></ul> | - Python<br>- Pandas<br>- NumPy<br>- Matplotlib<br>- Seaborn<br>- EDA |
-| **05.** Статистический анализ данных | **[Анализ сервиса аренды самокатов](05.%20Statistical%20data%20analysis/GoFast.ipynb)** | Анализ поведения пользователей и проверка гипотез для увеличения выручки. | <ul><li>Расчет помесячной выручки</li><li>Когортный анализ</li><li>Проверка статистических гипотез (t-тест)</li><li>Планирование промо-акций</li></ul> | - Python<br>- Pandas<br>- NumPy<br>- Matplotlib<br>- Seaborn<br>- SciPy<br>- Продуктовые метрики |
-| **06.** Линейные модели в ML | **[Прогнозирование удоя и вкуса молока](06.%20Linear%20models%20in%20ML/Linear_Models_in_ML_Volny_Lug.ipynb)** | Разработка моделей для предсказания годового удоя коровы и вероятности получения вкусного молока. | <ul><li>Feature engineering</li><li>Устранение нелинейности</li><li>Построение и сравнение моделей регрессии и классификации</li><li>Анализ важности признаков</li></ul> | - Python<br>- Scikit-learn<br>- Pandas<br>- NumPy<br>- Phik<br>- Пайплайны<br>- Линейные модели |
-| **07.** ML. Обучение с учителем качество моделей | **[Прогнозирование оттока клиентов интернет-магазина](07.%20Supervised%20learning.%20Model%20quality/forecasting_customer_activity.ipynb)** | Создание модели для предсказания снижения покупательской активности клиентов. | <ul><li>Объединение данных из нескольких источников</li><li>Построение пайплайнов предобработки</li><li>Обучение и сравнение моделей классификации</li><li>Интерпретация с SHAP</li></ul> | - Python<br>- Scikit-learn<br>- Shap<br>- Phik<br>- Пайплайны<br>- Работа с несбалансированными данными |
-| **08.** Сборный проект - 2. HR-аналитика | **[Прогнозирование уровня удовлетворенности и риска увольнения сотрудников](08.%20Сourse%20project%20-%202.%20HR-analytics/HR_analytics.ipynb)** | Построение моделей для прогнозирования уровня удовлетворенности (регрессия) и риска увольнения (классификация). | <ul><li>Глубокий EDA</li><li>Создание пользовательской метрики SMAPE</li><li>Борьба с дисбалансом (SMOTE)</li><li>Составление портрета уволившегося сотрудника</li></ul> | - Python<br>- Scikit-learn<br>- imbalanced-learn<br>- Shap<br>- Phik<br>- Пайплайны<br>- Регрессия<br>- Классификация |
-| **09.** ML в бизнесе | **[Прогнозирование наиболее прибыльного региона для бурения нефтяных скважин](09.%20ML%20in%20business/GlavRosGosNeft.ipynb)** | Построение модели для определения региона с максимальной прибылью от добычи нефти. | <ul><li>Анализ и предобработка данных</li><li>Обучение модели линейной регрессии</li><li>Расчет прибыли и рисков с помощью bootstrap</li><li>Выбор оптимального региона</li></ul> | - Python<br>- Scikit-learn<br>- Pandas<br>- NumPy<br>- Bootstrap |
-| **10.** Системы обработки больших данных | **[Прогнозирование стоимости жилья в Калифорнии](10.%20Big%20Data%20Systems/California_housing_prediction.ipynb)** | Обучение модели линейной регрессии на Spark MLlib для предсказания медианной стоимости жилья. | <ul><li>Работа с Spark DataFrame API</li><li>Построение пайплайна предобработки в Spark MLlib</li><li>Обучение и сравнение двух моделей</li><li>Оценка влияния категориального признака</li></ul> | - Apache Spark (PySpark)<br>- Spark SQL<br>- Spark MLlib<br>- LinearRegression<br>- Пайплайны |
+## ТЕХНОЛОГИИ И ИНСТРУМЕНТЫ
 
----
-
-## КАК ИСПОЛЬЗОВАТЬ
-
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/pereydirubicon/yandex-practicum-data-science-portfolio.git
-2.  Перейдите в папку интересующего проекта.
-3.  Откройте `.ipynb` файл в Jupyter Notebook или VS Code.
-4.  Изучите `README.md` внутри папки проекта для детального описания.
+*   **Языки и БД:** Python, SQL (PostgreSQL, BigQuery, SQLite)
+*   **Big Data / Обработка данных:** PySpark
+*   **ML и Статистика:** Scikit-learn, LightGBM, CatBoost, XGBoost, PyTorch, TensorFlow/Keras, SciPy, Statsmodels, Bootstrap, SHAP
+*   **Визуализация:** Matplotlib, Seaborn
+*   **Инструменты:** Git, Jupyter Notebook, Redash
 
 ## КОНТАКТЫ
 
-Если у вас есть вопросы или предложения, свяжитесь со мной:
-
-- **Email:** [innakiseleva.work@gmail.com](mailto:innakiseleva.work@gmail.com)
-- **Telegram:** [@pereydi_rubicon](https://t.me/pereydi_rubicon)
-- **Резюме на hh.ru:** [ссылка на резюме](https://yoshkar-ola.hh.ru/resume/db5334d0ff08ff1f180039ed1f6274517a626c)
+* **Email:** [innakiseleva.work@gmail.com](mailto:innakiseleva.work@gmail.com)
+* **Telegram:** [@pereydi_rubicon](https://t.me/pereydi_rubicon) 
+* **Резюме на hh.ru:** [ссылка на резюме](https://yoshkar-ola.hh.ru/resume/fb8b9e9fff116ab96f0039ed1f4c5a74574950)
